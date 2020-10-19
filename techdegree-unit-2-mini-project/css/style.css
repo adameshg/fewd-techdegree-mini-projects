@@ -1,0 +1,228 @@
+p/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  display: block;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.main-nav {
+  display: block;
+}
+
+.main-nav li {
+  background: #d9e4ea;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  text-align: center;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+  text-align: center;
+}
+
+.col {
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+  display: inline;
+  margin-top: 40px;
+}
+
+.headline {
+  margin-bottom: 5px;
+}
+
+.tagline {
+  display: inline-block;
+  margin-bottom: 40px;
+    
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .name {
+    float: left;
+    margin-left: 30px;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-top: 15px;
+    margin-right: 30px;
+    background: none;
+  }
+
+  .main-nav a {
+    background: initial;
+  }
+
+  .banner {
+    text-align: center;
+  }
+
+  .logo {
+    display: inline;
+    margin-top: 40px;
+  }
+
+  .headline {
+    margin-bottom: 5px;
+  }
+
+  .tagline {
+    display: inline-block;
+    margin-bottom: 40px;
+    
+  }
+
+  .col {
+    box-sizing: border-box;
+  }
+
+  .secondary {
+    float: left;
+    width: 44%;
+
+  }
+
+  .primary {
+    float: right;
+    width: 44%;
+
+  }
+
+  .tertiary {
+    clear: both;
+  }
+
+  .main-footer {
+    text-align: center;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+  .wrap {
+     min-height: calc(100vh - 90px);
+  }
+
+  .col {
+    width: 28%;    
+    float: left;
+  }
+
+  .primary {
+    width: 32%;
+  }
+
+  .tertiary {
+    clear: none;
+  }
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
